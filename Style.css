@@ -1,0 +1,43 @@
+*{
+    border: 0px;
+    margin: 0px;
+}
+
+#header{
+    background-color: rgb(178, 212, 125);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+
+}
+.menu{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+
+#header>img{
+    display: flex;
+    justify-content: left;
+    padding: 4%;
+}
+
+
+.productos{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    
+    
+
+   
+}
+.pro{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
