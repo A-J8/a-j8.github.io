@@ -1,0 +1,67 @@
+
+#cuerpo{
+    margin: 0 auto;
+    margin-top:50px;
+    background-color: aquamarine;
+    width: 70%;
+    border-radius: 50px;
+    padding: 50px;
+}
+#cuadroCarro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barra{
+    width: 100%;
+    
+    background-color: blue;
+    height: 100px;
+}
+#detalleProducto{
+    width: 40%;
+    border-right: 2px black solid;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#detalleProducto > img {
+    width: 180px;
+}
+#producto{
+    width: 30%;
+    border-right: 2px black solid;
+ 
+    padding-top: 30px;
+}
+#productoCarro{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px rgba(0, 0, 0, 0.623) solid;
+    text-align: center;
+}
+#arribaCarro{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px rgba(0, 0, 0, 0.774) solid;
+    text-align: center;
+    
+}
+#arribaCarro > div{
+    width: 30%;
+}
+
+#botonComprarCarro{
+    display: flex;
+    padding-top: 20px;
+    justify-content: flex-end;
+}
+
+#botonComprarCarro > button{
+    width: 200px;
+    height: 80px;
+    background-color: greenyellow;
+}
