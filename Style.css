@@ -1,43 +1,80 @@
-*{
+* {
     border: 0px;
     margin: 0px;
 }
 
-#header{
+#header {
     background-color: rgb(178, 212, 125);
-    display: flex;
-    justify-content: center;
-    text-align: center;
     color: white;
-
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
 }
+
 .menu{
     color: white;
     display: flex;
     justify-content: space-around;
-    background-color: gray;
+    background-color: green;
 }
 
+.menu>a{
+    color: white;
+    text-shadow: black;
 
-#header>img{
+}
+
+.inicio {
+    padding: 5%;
+    background-color: greenyellow;
+   
+}
+
+#header>img {
     display: flex;
     justify-content: left;
     padding: 4%;
 }
 
 
-.productos{
-    background-color: white;
+.productos {
+    background-color: transparent;
     display: flex;
-    justify-content: center;
-    
-    
-
-   
+    justify-content: space-around;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: rgb(178, 212, 125);;
 }
-.pro{
+
+.pro {
     width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
+    color: black;
+    padding: 3%;
+    background-color: rgb(178, 212, 125);
+    text-align: center;
+    padding: 3px 10px ;
+    border: green 5px solid;
+    border-radius: 20px;
+
+
+}
+
+
+
+
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    background-color: green;
+    padding: 1%;
 }
