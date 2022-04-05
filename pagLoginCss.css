@@ -1,0 +1,49 @@
+.header{
+    background-color: springgreen;
+    height: 15vh;
+        
+}
+
+#nombrePag{
+    text-align: center;
+    padding: 23px 0px 0px 0px ;
+}
+
+#iniciarSesion{
+    
+    
+}
+
+#infoSesionCorreo{
+    
+    
+    
+
+}
+
+#infoSesionContraseña{
+   
+}
+
+#ttIniSes{
+    
+    
+    
+}
+
+#Login{
+    width: 30%;
+    background-color: rgb(184, 236, 238);
+    padding: 40px;
+    
+    
+    box-shadow: 5px 7px 9px rgba(0, 0, 0, 0.421);
+}
+#cuerpo{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    align-items: center;
+    background-color: aliceblue;
+}
+
