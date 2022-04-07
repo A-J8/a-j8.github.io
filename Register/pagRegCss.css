@@ -1,0 +1,53 @@
+.header{
+    background-color: springgreen;
+    height: 15vh;
+    
+    box-shadow: 2px 1px 50px 1px rgba(0, 0, 0, 0.4);      
+}
+
+#nombrePag{
+    text-align: center;
+    padding: 23px 0px 0px 0px ;
+}
+
+#iniciarSesion{
+    display: flex;
+    justify-content: center;
+    margin-left: 94px;
+    margin-top: 30px;
+}
+
+
+#infoSesionCorreo{
+    
+    
+    
+
+}
+
+#infoSesionContraseña{
+   
+}
+
+#ttIniSes{
+    
+    
+    
+}
+
+#Login{
+    width: 30%;
+    background-color: rgb(184, 236, 238);
+    padding: 40px;
+    
+    
+    box-shadow: 5px 7px 9px rgba(0, 0, 0, 0.421);
+}
+#cuerpo{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+    align-items: center;
+    background-color: aliceblue;
+}
+
