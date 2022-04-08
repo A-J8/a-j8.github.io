@@ -4,7 +4,7 @@
 }
 
 #header {
-    background-color: rgb(178, 212, 125);
+    background-color: rgb(33, 139, 119);
     color: white;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -26,11 +26,15 @@
     
 
 }
-
+.ini{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(113, 197, 91);
+}
 .inicio {
     padding: 5%;
-    background-color: greenyellow;
-   
+    background-color: rgb(178, 212, 125);
+   width: 90%;
 }
 
 #header>img {
@@ -39,6 +43,9 @@
     padding: 4%;
 }
 
+.lista{
+    background-color:rgb(113, 197, 91);
+}
 
 .productos {
     background-color: transparent;
@@ -49,7 +56,7 @@
     margin-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: rgb(178, 212, 125);;
+    background-color: rgb(178, 212, 125);
 }
 
 .pro {
@@ -63,18 +70,66 @@
     padding: 3px 10px ;
     border: green 5px solid;
     border-radius: 20px;
-    
-
-
 }
-
-
-
-
-
+.padding{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(113, 197, 91);
+}
 .links {
     display: flex;
     justify-content: space-around;
-    background-color: green;
+    background-color: rgb(178, 212, 125);
     padding: 1%;
+    width: 90%;
+}
+
+.suscripciones{
+    width: 100%;
+    background-color: rgb(113, 197, 91);
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 30%;
+}
+
+.sus{
+    width: 90%;
+    background-color: white;
+    text-align: center;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: rgb(178, 212, 125);
+}
+
+.tiposus1{
+    background-image: linear-gradient(0, #ecffff 0, #e1ffff 25%, #cde5f2 50%, #b2b0ae 75%, #958474 100%);
+    padding: 4%;
+    border-radius: 20px 20px ;
+    box-shadow: 0px px 0px 0px rgba(0, 0, 0, 0.5);     
+}
+.tiposus2{
+    background-image: radial-gradient(circle at 4.55% 104.17%, #ffff6f 0, #fffd57 25%, #f2f23c 50%, #d7e818 75%, #bcde00 100%);
+    padding: 4%;
+    border-radius: 20px 20px ;
+    
+    box-shadow: 0px px 0px 0px rgba(0, 0, 0, 0.5);     
+}
+.tiposus3{
+    background-image: radial-gradient(circle at 50% -20.71%, #d1fff8 0, #befff6 10%, #a7fff4 20%, #8dfff3 30%, #6cfbf2 40%, #3cf2f2 50%, #00e8f3 60%, #00dff5 70%, #00d6f9 80%, #00cefd 90%, #00c6ff 100%);
+    padding: 4%;
+    border-radius: 20px 20px ;
+    
+    box-shadow: 0px px 0px 0px rgba(0, 0, 0, 0.5);     
+}
+
+.boton{
+    padding-top: 15%;
+    background-color: red;
+    border-radius: 20px 20px ;
+    box-shadow: 0px px 0px 0px rgba(0, 0, 0, 0.5);  
+    
+    
 }
