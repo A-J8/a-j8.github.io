@@ -1,10 +1,9 @@
 * {
     border: 0px;
     margin: 0px;
+   
 }
-
 #header {
-    
     background-color:rgb(238, 86, 1);
     color: white;
     padding-top: 1%;
@@ -14,14 +13,10 @@
     display: flex;
     justify-content: space-between;
 }
-
-
-
 .inicio {
     padding: 5%;
     background-image: url(https://c.wallhere.com/photos/ba/81/nature_dirtroad_plants_trees_leaves_grass_path_fall-1927963.jpg!d);
 }
-
 .productos {
     background-color: transparent;
     display: flex;
@@ -31,9 +26,7 @@
     margin-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
- 
 }
-
 .pro {
     width: 30%;
     display: flex;
@@ -48,17 +41,26 @@
     justify-content: space-around;
     background-color: rgb(241, 122, 31);
 }
-
-
 .footer{
     display: flex;
     justify-content: center;
     background-color: rgb(241, 122, 31);
 }
+@media mobile {
+    .footer{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 376px){
+    .footer{
+        height: initial;
+    }
+    
+}
 .links {
     display: flex;
     justify-content: space-around;
-
     padding: 1%;
     width: 90%;
 }
@@ -70,10 +72,8 @@
     padding: 5%;
     background-image: url(https://c.wallhere.com/photos/ba/81/nature_dirtroad_plants_trees_leaves_grass_path_fall-1927963.jpg!d);
 }
-
-
 .sus{
-    width: 30%;
+    width: 80%;
     background-color: white;
     text-align: center;
     color: black;
@@ -82,11 +82,10 @@
     background-color: rgb(241, 122, 31);
     border: orange 5px solid;
 }
-
 .logo{
     display: flex;
     justify-content: center;
-   
-
 }
+
+
 
