@@ -1,0 +1,71 @@
+#cuerpo{
+    width: 100%;
+    height:  auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20%;
+}
+#cuadroCompras{
+    margin-top:50px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: white;
+    border: 4px rgb(255, 166, 0) solid;
+}
+#detalleCompra{
+    border-top: 2px gray solid;
+}
+#detalleCompra > a{
+    text-decoration: none;
+}
+#VolverInicioCompras > button{
+    background-color: rgb(255, 166, 0);
+    margin-left: 30px;
+    margin-top: 20px;
+    height: 35px;
+    width: 80px;
+}
+#header {
+    background-color: rgb(255, 166, 0);
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 226, 11);
+}
+
+.menu>a{
+    color: white;
+}
+.pro {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 3%;
+    background-color: rgb(178, 212, 125);
+    text-align: center;
+    padding: 3px 10px ;
+    border: green 5px solid;
+    border-radius: 20px;
+    
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.86);
+    padding: 1%;
+}

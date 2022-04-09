@@ -2,10 +2,11 @@
 #cuerpo{
     margin: 0 auto;
     margin-top:50px;
-    background-color: aquamarine;
+    background-color: white;
     width: 70%;
-    border-radius: 50px;
+    border-radius: 30px;
     padding: 50px;
+    border: 4px rgb(255, 166, 0) solid;
 }
 #cuadroCarro{
     display: flex;
@@ -15,7 +16,6 @@
 
 #barra{
     width: 100%;
-    
     background-color: blue;
     height: 100px;
 }
@@ -27,12 +27,11 @@
 }
 
 #detalleProducto > img {
-    width: 180px;
+    width: 150px;
 }
 #producto{
     width: 30%;
     border-right: 2px black solid;
- 
     padding-top: 30px;
 }
 #productoCarro{
@@ -63,5 +62,66 @@
 #botonComprarCarro > button{
     width: 200px;
     height: 80px;
-    background-color: greenyellow;
+    background-color: rgb(255, 166, 0);
 }
+#botonCerrarCarrito{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#botonCerrarCarrito > button{
+    background-color: rgb(255, 166, 0);
+}
+#header {
+    background-color: rgb(255, 166, 0);
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(248, 195, 98);
+}
+
+.menu>a{
+    color: white;
+}
+
+.pro {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 3%;
+    background-color: rgb(178, 212, 125);
+    text-align: center;
+    padding: 3px 10px ;
+    border: green 5px solid;
+    border-radius: 20px;
+    
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.86);
+    padding: 1%;
+}
+
+#cuerpo > a {
+    text-decoration: none;
+}
+
+@media only screen and(min-width:1080px){
+    .padding{
+        width: 100%;
+    }
+}
+
