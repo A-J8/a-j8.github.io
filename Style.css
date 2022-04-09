@@ -1,10 +1,10 @@
 * {
     border: 0px;
     margin: 0px;
+   
 }
-
 #header {
-    background-color: rgb(178, 212, 125);
+    background-color:rgb(238, 86, 1);
     color: white;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -13,33 +13,10 @@
     display: flex;
     justify-content: space-between;
 }
-
-.menu{
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    background-color: green;
-}
-
-.menu>a{
-    color: white;
-    
-
-}
-
 .inicio {
     padding: 5%;
-    background-color: greenyellow;
-   
+    background-image: url(https://c.wallhere.com/photos/ba/81/nature_dirtroad_plants_trees_leaves_grass_path_fall-1927963.jpg!d);
 }
-
-#header>img {
-    display: flex;
-    justify-content: left;
-    padding: 4%;
-}
-
-
 .productos {
     background-color: transparent;
     display: flex;
@@ -49,32 +26,66 @@
     margin-right: 5%;
     padding-top: 2%;
     padding-bottom: 2%;
-    background-color: rgb(178, 212, 125);;
 }
-
 .pro {
     width: 30%;
     display: flex;
     flex-direction: column;
     color: black;
     padding: 3%;
-    background-color: rgb(178, 212, 125);
     text-align: center;
     padding: 3px 10px ;
-    border: green 5px solid;
+    border: orange 5px solid;
     border-radius: 20px;
-    
-
-
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(241, 122, 31);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(241, 122, 31);
+}
+@media mobile {
+    .footer{
+        width: 100%;
+    }
 }
 
-
-
-
-
+@media screen and (min-width: 376px){
+    .footer{
+        height: initial;
+    }
+    
+}
 .links {
     display: flex;
     justify-content: space-around;
-    background-color: green;
     padding: 1%;
+    width: 90%;
 }
+
+.suscripciones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    background-image: url(https://c.wallhere.com/photos/ba/81/nature_dirtroad_plants_trees_leaves_grass_path_fall-1927963.jpg!d);
+}
+.sus{
+    width: 80%;
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 2%;
+    border-radius: 20px;
+    background-color: rgb(241, 122, 31);
+    border: orange 5px solid;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+
+
