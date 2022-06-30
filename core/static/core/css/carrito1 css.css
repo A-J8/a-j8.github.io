@@ -1,0 +1,163 @@
+
+#cuerpo{
+    margin: 0 auto;
+    margin-top:50px;
+    background-color: white;
+    width: 70%;
+    border-radius: 30px;
+    padding: 50px;
+    border: 4px rgb(255, 166, 0) solid;
+}
+#cuadroCarro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#detalleProducto{
+    width: 40%;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#detalleProducto > img {
+    width: 150px;
+}
+#producto{
+    width: 30%;
+    border-left: 2px black solid;
+    padding-top: 30px;
+}
+#productoCarro{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px rgba(0, 0, 0, 0.623) solid;
+    text-align: center;
+}
+#arribaCarro{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: 1px rgba(0, 0, 0, 0.774) solid;
+    text-align: center;
+    
+}
+#arribaCarro > div{
+    width: 100%;
+}
+
+#botonComprarCarro{
+    display: flex;
+    padding-top: 20px;
+    justify-content: flex-end;
+}
+
+#botonComprarCarro > button{
+    width: 200px;
+    height: 80px;
+    background-color: rgb(255, 166, 0);
+}
+#botonCerrarCarrito{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#botonCerrarCarrito > button{
+    background-color: rgb(255, 166, 0);
+}
+#header {
+    background-color: rgb(255, 166, 0);
+    color: white;
+    /* padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.menu{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(248, 195, 98);
+}
+
+.menu>a{
+    color: white;
+}
+
+.pro {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 3%;
+    background-color: rgb(178, 212, 125);
+    text-align: center;
+    padding: 3px 10px ;
+    border: green 5px solid;
+    border-radius: 20px;
+    
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.86);
+    padding: 1%;
+}
+
+#cuerpo > a {
+    text-decoration: none;
+}
+
+#botonEliminarCarrito > button{
+    border: 0px;
+    background-color: white;
+    padding-top: 8px;
+    padding-right: 10px;
+}
+
+#producto > button{
+    border: 1px black solid;
+    background-color: white;
+    width: 27px;
+}
+@media (max-width: 768px){
+    h5{
+        font-size: 16px !important;
+    }
+    #detalleProducto > img{
+        width: 48px !important;
+    }
+    #cuerpo{
+        width: 90%;
+    
+    }
+    #botonEliminarCarrito > button > img{
+        width: 15px;
+    }
+    #botonEliminarCarrito > button{
+        width: 20px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    #producto > button{
+        width: 20px;
+        font-size: 13px;
+    }
+    #detalleProducto{
+        font-size: 13px;
+    }
+    #producto{
+        font-size: 13px;
+    }
+    #botonComprarCarro > button{
+        width: 35%;
+        height: 40px;
+    }
+    
+}

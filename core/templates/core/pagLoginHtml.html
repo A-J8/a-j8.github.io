@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'core/css/pagLoginCss.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<style>
+    .error {
+        background-color: rgba(250, 0, 0, 0.151);
+        border: red solid;
+    }
+
+    .ok {
+        background-color: white;
+        border: rgb(255, 166, 0) solid;
+    }
+</style>
+<body
+    style="background-image: url(https://c.wallhere.com/photos/ba/81/nature_dirtroad_plants_trees_leaves_grass_path_fall-1927963.jpg!d); height: 100%;">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--Barra-->
+    <div>
+        <div>
+            <div id="header">                
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'core/img/logo.png' %}" alt="" srcset=""></a>
+                <h1
+                    style="justify-content: center; font-family: Georgia, 'Times New Roman', Times, serif  ; color: black;  ">
+                    Lotu's Garden
+                </h1>
+                <div class="shopping">
+                    <a href="{% url 'carrito' %}">
+                        <img src="{% static 'core/img/icons8-shopping-trolley-64.png' %}" alt="imagen carrito" srcset="">
+                    </a>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #fcd993;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="{% url 'index' %}">
+                        <h3>Inicio</h3>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="true">
+                                    Cuenta
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="{% url 'pagLoginHtml' %}">Iniciar sesion</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'misCompras' %}">Mis compras</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'seguimientoDespacho' %}">Seguimiento
+                                            despacho</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="{% url 'suscripciones' %}">Suscripciones </a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="true">
+                                    Administrador
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="{% url 'crudHtml' %}">Stock productos</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'promociones' %}">Administrar promociones</a>
+                                    </li>
+                                    <li>
+                                </ul>
+
+                            </li>
+
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="Buscar" placeholder="Buscar" aria-label="Buscar">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <!--Fin Barra-->
+    <div id="cuerpo">
+        <div id="Login">
+            <div id="ttIniSes">
+                <h2>Iniciar Sesión</h2>
+            </div>
+            <div id="txLogin">
+                <form>
+                    <div id="infoSesionCorreo">
+                        <label for="exampleInputEmail1" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" style="border: rgb(255, 166, 0) solid;">
+
+                    </div>
+                    <div id="infoSesionContraseña">
+                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="Contra1" style="border: rgb(255, 166, 0) solid;">
+                    </div>
+                </form>
+                <div id="infoSesionContraseña" style="display: flex; justify-content: center; flex-direction: column;">
+                    <a href="pagRegHtml.html" id="noReg" style="margin: 0% auto;">¿No estas registrado?</a>
+
+                    <button type="submit" class="btn btn-primary" id="iniciarSesion"
+                        style="margin: 0% auto; margin-top: 2% ; display: flex; justify-content: center; background-color: orange; border: rgb(255, 166, 0) solid;">Iniciar
+                        Sesión</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+      $("#iniciarSesion").click(function(){
+        ValidarUsuario($("#Email1").val(), $("#Contra1").val());
+        
+         
+      });
+    
+        function ValidarUsuario(correo, password) {
+            if (/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(correo)) {
+                alert("La dirección de email " + correo + " es correcta. ");
+                if (password.length >= 8){
+                    alert("la contraseña es valida")
+                }else{
+                    alert("la contraseña es invalida");
+                    $("#Contra1").addClass("error");
+                    $("#Contra1").removeClass("ok");
+                    
+                }
+                
+            } else {
+                alert("La dirección de email es incorrecta  " + correo);
+                $("#Email1").addClass("error");
+                $("#Email1").removeClass("ok");
+            }
+        };
+        
+        $("#Email1").blur(function(){
+            $("#Email1").addClass("ok");
+            $("#Email1").removeClass("remove");
+        });
+
+        $("#Contra1").blur(function(){
+            $("#Contra1").addClass("ok");
+            $("#Contra1").removeClass("remove");
+        });
+    </script>
+</body>
+
+</html>
